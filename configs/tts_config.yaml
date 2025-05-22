@@ -1,0 +1,12 @@
+model_name: "facebook/fastspeech2-en-ljspeech"
+vocoder_path: "models/tts/hifigan"
+emotion_embeddings:
+  happy: [0.2, 0.8, -0.1, ...]  # 64-dim vector
+  sad: [-0.5, 0.1, -0.3, ...]
+  angry: [0.7, -0.2, 0.4, ...]
+  neutral: [0.0, 0.0, 0.0, ...]
+prosody_controls:
+  min_speed: 0.8
+  max_speed: 1.3
+  min_pitch: 0.8
+  max_pitch: 1.3
